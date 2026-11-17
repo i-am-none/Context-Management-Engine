@@ -1,0 +1,18 @@
+[package]
+name = "nexus-cme"
+version = "0.1.0"
+edition = "2021"
+description = "Nexus Context Management Engine"
+readme = "README.md"
+
+[dependencies]
+tokio = { version = "1.43", features = ["macros", "rt-multi-thread", "net", "io-util"] }
+axum = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+sqlx = { version = "0.9.0", default-features = false, features = ["runtime-tokio", "sqlite", "macros", "migrate"] }
+
+[dev-dependencies]
+tempfile = "3.27.0"

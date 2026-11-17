@@ -1,0 +1,2 @@
+-- Initial baseline migration for Nexus CME persistence foundation.
+-- Migration version tracking is managed by SQLx in `_sqlx_migrations`.
